@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<style>
+
+	</style>
+	<title>IT 2320 - Lab 2</title>
+	<pre>
+   <script>
+	"use strict";
+
+	// set up an array and initialize the first two values
+	var fibArray = [];
+	fibArray[0] = 0;
+	fibArray[1] = 1;
+
+	// declare a variable for the size of the squence 
+	var fibNum;
+	fibNum=prompt("how many times do you want to generate fibonacci");
+	fibNum=parseInt(fibNum);
+
+
+
+	// prompt user for how many 
+	while(fibNum<3){
+	}
+	// check that fibNum >= 3
+
+	// write the values into the array
+	// You start at 2 because the first two values are already there
+	for (var i = 2; i < fibNum; i++) {
+		fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
+	}
+
+	// read from the array and print balues to screen
+	// another for loop 
+	for (i = 0; i < fibNum; i++) {
+		document.write(fibArray[i] + "<br />");
+	}
+
+	// calculate golden ratio and display it
+	//  last number / 2nd last number
+
+	var gratio = fibArray[fibNum - 1] / fibArray[fibNum - 2];
+	document.write("Ratio is " + gratio);
+
+</script>
+   </pre>
+</head>
+
+<body>
+	<h2>Luis Guerra - IT 2320 - Lab 2</h2>
+
+</body>
+
+</html>
