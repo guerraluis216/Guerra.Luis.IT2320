@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>change picture</title>
+	<script type="text/javascript">
+
+		var i, images = [];
+		images[0] = "adams.jpg";
+		images[1] = "jackson.jpg";
+		images[2] = "jefferson.jpg";
+		images[3] = "madison.jpg";
+		images[4] = "washington.jpg";
+
+		var displayNextImage = function () {
+			for (i=0; i < images.length; i--);
+		}
+
+		var startTimer = function () {
+			setInterval(displayNextImage, 3000);
+		}
+
+		window.onload = function () {
+			startTimer = setInterval(1000);
+		}
+	</script>
+</head>
+
+<body>
+	<h2>Luis Guerra - IT 2320 - Lab 5</h2>
+	<p>
+		<center>
+			Timer (seconds): <input type="text" id="timerVal" value="5"><br /><br />
+			<img src="adams.jpg"><br /><br />
+			<h2 id="timerCount">5</h2>
+		</center>
+	</p>
+</body>
+
+</html>
